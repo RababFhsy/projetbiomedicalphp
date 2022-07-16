@@ -253,7 +253,7 @@
 							<div class="modal-content" style="width: 800px;">
 								<div  class="text-danger alert alert-danger "  style="text-align:center;width: 800px;">
 								<label > Ses Capteurs </label></div>
-								<table class="table table-bordered" style= " mwidth:400px;">
+								<table class="table table-bordered" style= " width: 400px;">
 									<thead class="alert-info"  style="width: 400px;">
 									<th>Numero</th>
 									
