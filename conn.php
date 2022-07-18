@@ -1,7 +1,7 @@
 <?php
-	$db_username = 'root';
-	$db_password = '';
-	$conn = new PDO( 'mysql:host=localhost;dbname=gestion_cab', $db_username, $db_password );
+	$db_username = 'sql8507184';
+	$db_password = 'Qkh69VLzdk';
+	$conn = new PDO( 'mysql:host=sql8.freesqldatabase.com;dbname=sql8507184', $db_username, $db_password );
 	if(!$conn){
 		die("Fatal Error: Connection Failed!");
 	}
