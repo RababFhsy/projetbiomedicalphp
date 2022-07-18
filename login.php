@@ -109,8 +109,8 @@ if (isset($_POST['username'])){
         </div>
     </div>
 
-
-    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="vendors/jquery/dist/jquery.min.js"></script> -->
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
