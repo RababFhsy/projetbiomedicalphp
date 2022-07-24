@@ -140,11 +140,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+                            <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                           
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -172,7 +172,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -188,7 +188,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="content mt-3">
 
@@ -200,8 +200,8 @@
 		
 
 		</div>
-			<table class="table table-bordered" style="margin-left : 15px; width: 1000px;">
-				<thead class="alert-info">
+			<table class="table table-hover" style="margin-left : 15px; width: 1000px;">
+				<thead class="table-dark">
 					<tr>
 						<th>Nom de Patient</th>
                         <th>Date de naissance </th>
@@ -238,7 +238,7 @@
 
 
 				
-	<td><input type="submit" onclick="$('.typebassoc').change();" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>"  value ="Affecter un Boitier ">| <a class="btn btn-danger btn-sm" href="deletepatient.php?id=<?php echo $fetch['id']?>">Delete</a></td>
+	<td><input type="submit" onclick="$('.typebassoc').change();" class="btn btn-outline-dark" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>"  value ="Affecter un Boitier ">| <a class="btn btn-danger btn-sm" href="deletepatient.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
 
 						
 					  
@@ -295,7 +295,7 @@
 				</div>
 			
 											<div class="form-group">
-												<button class="btn btn-warning form-control" type="submit" name="affecter">Affecter</button>
+												<button class="btn btn-outline-dark" type="submit" name="affecter">Affecter</button>
 											</div>
 										</div>	
 									</div>	
@@ -334,19 +334,20 @@
 
 
 				
-	<td><input type="submit" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>" onclick="$('.typebassoc').change();"  value ="Reaffecter un Boitier ">| <a class="btn btn-danger btn-sm" href="deletepatient.php?id=<?php echo $fetch['id']?>">Delete</a></td>
+	<td><input type="submit" class="btn btn-outline-dark" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>" onclick="$('.typebassoc').change();"  value ="Reaffecter un Boitier ">
+	<a class="btn btn-outline-danger" href="deletepatient.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
 
     <td>
-						<button  class="btn btn-info btn-sm" data-toggle="modal"  data-target="#up<?php echo $fetch['id']?>">Voir details de boitier </button>
+						<button  class="btn btn-outline-primary" data-toggle="modal"  data-target="#up<?php echo $fetch['id']?>">Voir détails de boitier </button>
 			
 					
 						<div class="modal fade" id="up<?php echo $fetch['id']?>"  style="width=1000px" aria-hidden="true">
 						<div class="modal-dialog" style="width=1000px">
 							<div class="modal-content" style="width=1000px" >
-								<div  class="text-danger alert alert-danger "  style="text-align:center;">
+								<div  class="text-danger alert alert-danger "  style="text-align:center">
 								<label  >Boitier </label></div>
-								<table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-									<thead class="alert-info" >
+								<table id="example" class="table table-hover" style="width:100%">
+									<thead class="table-dark" >
 									
                                     <th>Type de Boitier </th>		
 						<th>Date de l'affectation</th>
@@ -387,7 +388,7 @@
 </table>
 				
 							<div class="modal-footer">
-										<button class="btn btn-danger" data-dismiss="modal">Close</button>
+										<button  class="btn btn-danger" data-dismiss="modal">Close</button>
 
 									</div>		
 						</div>
@@ -399,11 +400,11 @@
           
 
                     <td>
-						<button  class="btn btn-info btn-sm" data-toggle="modal" onclick="fat('<?php echo $idb ?>')" data-target="#p">  Voir ses Donnes
+						<button  class="btn btn-outline-primary" data-toggle="modal" onclick="fat('<?php echo $idb ?>')" data-target="#p">  Voir ses Données
                     </button>
 			
 				
-                
+
                     <?php } ?> 
 
 					</tr>
@@ -464,7 +465,7 @@
 				</div>
                        
 											<div class="form-group">
-												<button class="btn btn-warning form-control" type="submit" name="affecter">ReAffecter</button>
+												<button class="btn btn-outline-dark" type="submit" name="affecter">ReAffecter</button>
 											</div>
 										</div>	
 									</div>
@@ -499,7 +500,7 @@
 					<div class="modal-dialog" >
 							<div class="modal-content" >
                               <form action="patientparmedecin.php" >
-								<div  class="text-danger alert alert-light "  style="text-align:center;">
+								<div  class="text-dark alert alert-light "  style="text-align:center;">
                                 <div style="height : 10% ">
 
                                <div id="chartContainer">

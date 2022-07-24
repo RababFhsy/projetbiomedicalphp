@@ -78,26 +78,27 @@
                 <form class="box" action="" method="post">
                 <div class="form-group">
                 <div class="form-group">
-                            <label>Profile </label>
+                            <label style=" align-items: center"><h4>Profile</h4> </label>
                         </div>
                     <div>
                             <img  class="form-control"  style="width: 300px; height: 200px;" src="profile.jpg" name="username"/>
                         </div>
+                        <br>
                         <div class="form-group">
-                            <label>Nom d'utilisateur </label>
-                            <input  class="form-control" placeholder="User Name" value="<?php echo $_SESSION['username']?>" name="username">
+                            <label>Nom d'utilisateur: </label>
+                        <label><h6><?php echo $_SESSION['username']?></h6></label>
                         </div>
                             <div class="form-group">
-                                <label>Email </label>
-                                <input class="form-control" name="email" value="<?php echo $_SESSION['email']?>" placeholder="Email">
+                                <label>Email: </label>
+                               <label><h6> <?php echo $_SESSION['email']?></h6></label>
                         </div>
                         <div>
-                        <label>Role </label>
-                                <input class="form-control" name="email" value="<?php echo $_SESSION['type']?>" placeholder="Email">
+                        <label>Role :</label>
+                                 <label><h6><?php echo $_SESSION['type']?></h6></label>
                         </div>
                                     
-                      
-                                    <button type="submit"  class="btn btn-info btn-flat m-b-30 m-t-30"><a class="btn text-light "href ="indexadmin.php">Revener</a></button>
+                      <br>
+                                    <button type="submit"  class="btn btn-info btn-flat m-b-30 m-t-30"><a class="btn text-light " href ="indexadmin.php"><h6>Revenir</h6></a></button>
                                     
                     </form>
 

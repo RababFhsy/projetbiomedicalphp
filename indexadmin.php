@@ -90,7 +90,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Créer un boitier</a></li>
                             <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
                          
                         </ul>
@@ -99,26 +99,26 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Créer un capteur</a></li>
                             <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
                          
                         </ul>
                     </li>
                   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Médecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Créer un compte Médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des Médecins</a></li>
                          
                         </ul>
                     </li>
   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Secrétaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires.php">Creer un compte secretaire</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_secretaires1.php">Liste des secretaires</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires.php">Créer un compte Secrétaire</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_Secrétaires1.php">Liste des Secrétaires</a></li>
                          
                         </ul>
                     </li>
@@ -172,18 +172,15 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+                            <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                          
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
-                    <div class="language-select dropdown" id="language-select">
-    
-                       
-                    </div>
+                    
 
                 </div>
             </div>
@@ -313,7 +310,7 @@ require_once 'conn.php';
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
                                 <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="add_users.php">Gestion Medecin</a>
+                                    <a class="dropdown-item" href="add_users.php">Gestion Médecin</a>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +332,7 @@ require_once 'conn.php';
                         
                 
                         </h4>
-                        <p class="text-light">Nombre de Medecin</p>
+                        <p class="text-light">Nombre de Médecins</p>
                         <span style="font-size:30px;" class="count"><?php echo $idp ?></span>
 
 
@@ -356,7 +353,7 @@ require_once 'conn.php';
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
                                 <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="add_secretaires.php">Gestion secretaires</a>
+                                    <a class="dropdown-item" href="add_secretaires.php">Gestion Secrétaires</a>
                              
                                 </div>
                             </div>
@@ -378,7 +375,7 @@ require_once 'conn.php';
 					?>
 						
                         </h4>
-                        <p class="text-light">Nombre de secretaire</p>
+                        <p class="text-light">Nombre de Secrétaire</p>
                         <span style="font-size:30px;" class="count"><?php echo $idr ?></span>
 
 
@@ -392,7 +389,7 @@ require_once 'conn.php';
       
 
     <!-- Right Panel -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>

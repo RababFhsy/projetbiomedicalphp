@@ -139,11 +139,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                        <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+                        <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                           
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -173,7 +173,7 @@
                  
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="content mt-3">
 
@@ -218,7 +218,7 @@ require_once 'conn.php';
                 
                            
                         </h4>
-                        <p class="text-light"> Nbr de Patients Ayant un boitier </p>
+                        <p class="text-light"> Nombre de Patients Ayant un boitier </p>
                         <span  style="font-size:70px;" class="count"><?php echo $idb2 ?></span>
 
                         <div class="chart-wrapper px-0" style="height:70px;" height="70">
@@ -228,7 +228,7 @@ require_once 'conn.php';
 
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-3" style="width: 20%">
+            <div class="col-sm-6 col-lg-3" style="width: 100%">
                 <div class="card text-white bg-flat-color-1">
                     <div class="card-body pb-0">
                         <div class="dropdown float-right">
@@ -262,8 +262,8 @@ require_once 'conn.php';
                 
                           
                         </h4>
-                        <p class="text-light"> Nbr Totale
-                             des Patients</p>
+                        <p class="text-light"> Nombre Totale des Patients</p>
+                            
                         <span  style="font-size:70px;" class="count"><?php echo $idb1 ?></span>
 
                         <div class="chart-wrapper px-0" style="height:70px;" height="70">
@@ -294,7 +294,7 @@ require_once 'conn.php';
                 
                             
                         </h4>
-                        <p class="text-light">Nbr de Patients n'ayant pas un boitier</p>
+                        <p class="text-light">Nombre de Patients n'ayant pas un boitier</p>
                         <span style="font-size:70px;"  class="count"><?php echo $idb1-$idb2 ?></span>
 
                         <div class="chart-wrapper px-0" style="height:70px;" height="70">
@@ -310,7 +310,7 @@ require_once 'conn.php';
   
 
     <!-- Right Panel -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>

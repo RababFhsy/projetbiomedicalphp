@@ -89,35 +89,35 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
-                            <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">créer un boitier</a></li>
+                            <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des Boitiers</a></li>
                          
                         </ul>
                     </li>
  
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
-                            <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">créer un Capteur</a></li>
+                            <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des Capteurs</a></li>
                          
                         </ul>
                     </li>
                   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Médecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">créer un compte Médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des Médecins</a></li>
                          
                         </ul>
                     </li>
   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Secrétaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Creer un compte secretaire</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des secretaires</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">créer un compte secrétaire</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des Secrétaires</a></li>
                          
                         </ul>
                     </li>
@@ -173,11 +173,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                         
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -189,7 +189,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs bg-info">
+        <!-- <div class="breadcrumbs bg-info">
             <div class="col-sm-4 bg-info">
                 <div class="page-header bg-info float-left">
                     <div class="page-title bg-info">
@@ -205,23 +205,27 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="content mt-3">
             <!--/.col-->
 
-            
-                <div><a class="btn btn-warning btn-sm" style="width : 200px" href="add_secretaires1.php">+ Creer un  compte Secretaire  </a>  <a class="btn btn-primary btn-sm" style="width : 200px" href="add_secretaires.php">Actualiser la page</a> </div></br>
-                <div></div></br>
+        
+                <div><a  class="btn btn-outline-success"  href="add_secretaires1.php"><i class="fa fa-plus" aria-hidden="true"></i>  compte Sécretaire </a>  <a  class="btn btn-outline-primary" style="width : 150px" href="add_secretaires.php"><i class="fa fa-refresh" aria-hidden="true"></i>   Actualiser </a> </div></br>
         
                 </div>
-                    <table class="table table-bordered  alert-info" style="width: 100%;">
-				<thead class="alert-info">
+                <div class="form-box">
+                    <div class="container">
+                    <table  class="table table-hover"  style="width: 100%;";>
+                   
+				<thead  class="table-dark">
+               
 					<tr>
 					
 						<th>Nom</th>
 						<th>Email</th>
 						<th>Fonction</th>
+                        <th>Action</th>
 					
 					</tr>
 				</thead>
@@ -237,7 +241,7 @@
 						<td><?php echo $fetch['email']?></td>
 						<td><?php echo $fetch['type']?></td>
 						
-						<td>| <a class="btn btn-danger btn-sm" href="deletesecretaires.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
+						<td> <a class="btn btn-outline-danger" href="deletesecretaires.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
 					</tr>
 				
 					<?php
@@ -245,6 +249,8 @@
 					?>
 				</tbody>
 			</table>
+                    </div>
+                
 		</div>
 	</div>
 	<script src="js/jquery-3.2.1.min.js"></script>	

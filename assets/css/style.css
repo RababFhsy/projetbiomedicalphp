@@ -1813,11 +1813,11 @@ header .form-inline {
   margin: 8vh auto; }
 
 .login-form {
-  background: #ffffff;
+  background: #000000;
   padding: 30px 30px 20px;
   border-radius: 2px; }
 
-.login-form h4 {
+.login-form h5 {
   color: #878787;
   text-align: center;
   margin-bottom: 50px; }
@@ -1842,12 +1842,12 @@ header .form-inline {
 .login-form label a {
   color: #ff2e44; }
 
-.social-login-content {
+/* .social-login-content {
   margin: 0 -30px;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   padding: 30px 0;
-  background: #fcfcfc; }
+  background: #000000; } */
 
 .social-button {
   padding: 0 30px; }
@@ -2372,7 +2372,8 @@ header .form-inline {
 
 @media (max-width: 575.99px) {
   body {
-    display: block; }
+    display: block; 
+    background-size: cover;}
   aside.left-panel {
     display: block;
     height: auto;

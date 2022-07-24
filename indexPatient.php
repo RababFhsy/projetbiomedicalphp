@@ -57,6 +57,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>  
+           <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
            <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>            
            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />  
 
@@ -92,7 +93,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Patients </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Creer un compte patient</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Créer un compte patient</a></li>
                             <li><i class="fa fa-table"></i><a href="indexPatient.php">Liste des patients</a></li>
                          
                         </ul>
@@ -152,11 +153,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i>  Profile</a>
 
                             
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -169,7 +170,7 @@
 
         </header><!-- /header -->
         <!-- Header-->
-		<div class="breadcrumbs  bg-info">
+		<!-- <div class="breadcrumbs  bg-info">
             <div class="col-sm-4  bg-info">
                 <div class="page-header float-left   bg-info ">
                     <div class="page-title  bg-info text-">
@@ -177,7 +178,7 @@
                     </div>
                 </div>
             </div>          
-        </div>
+        </div> -->
 
 		
 
@@ -189,17 +190,20 @@
 		
 			
 		<div   style="margin : 30px;">
-		<div><a class="btn btn-warning btn-sm"  href="ajouterpatient.php">+Ajouter un patient </a>  <a class="btn btn-primary btn-sm" style="width : 200px" href="indexPatient.php">Actualiser la page</a> </div></br>
-                <div></div></br>
+		<!-- <div><a class="btn btn-warning btn-sm"  href="ajouterpatient.php">+Ajouter un patient </a>  <a class="btn btn-primary btn-sm" style="width : 200px" href="indexPatient.php">Actualiser la page</a> </div></br>
+                <div></div></br> -->
+                <!-- <div><a   class="btn btn-outline-primary"  href="ajouterpatient.php"> <i class="fa fa-plus" aria-hidden="true"></i> Ajouter patient  </a>  <a  class="btn btn-outline-primary" style="width : 150px" href="indexPatient.php"><i class="fa fa-refresh" aria-hidden="true"></i>   Actualiser </a> </div></br> -->
+                <div><a  class="btn btn-success"  href="ajouterpatient.php"><i class="fa fa-plus" aria-hidden="true"></i>  compte patient </a>  <a  class="btn btn-primary" style="width : 150px" href="indexPatient.php"><i class="fa fa-refresh" aria-hidden="true"></i>   Actualiser </a> </div></br>
+                
         
-			<table id="employee_data"  class="table table-bordered" style="width : 1000px">
-				<thead class="alert-info" >
+			<table id="employee_data"  class="table table-hover" style="width : 1000px">
+				<thead class="table-dark" >
 					<tr>
 						<th>Nom </th>
 						<th>Email</th>
 						
 						<th>Date de naissance</th>
-						<th>Nom de Medecin</th>
+						<th>Nom de Médecin</th>
 						<th></th>
 					</tr>
 				</thead>
@@ -219,7 +223,8 @@
 						<td><?php echo $fetch['email']?></td>
 						<td><?php echo $fetch['dateDeNaissance']?></td>
 						<td> Dr.<?php echo $fetch1['fullname']?></td>
-						<td><button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>">Modifier</button><a class="btn btn-danger btn-sm" href="deletePatient.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
+						<td><button class="btn btn-success" data-toggle="modal" data-target="#update<?php echo $fetch['id']?>">Modifier</button>
+                        <a  class="btn btn-danger" href="deletePatient.php?id=<?php echo $fetch['id']?>">Supprimer</a></td>
 					</tr>
 					
 					<div class="modal fade" id="update<?php echo $fetch['id']?>" aria-hidden="true">
@@ -248,7 +253,7 @@
 											</div>
                                             <div class="form-group">
 												
-												<label>Nom de Medecin</label>
+												<label>Nom de Médecin</label>
 				                               <select class="form-control" name="nommedecin">
 																	<option>Autre</option>
 																	<?php
@@ -265,7 +270,7 @@
 
 											</div>
 											<div class="form-group">
-												<button class="btn btn-warning form-control" type="submit" name="update">Modifier</button>
+												<button class="btn btn-success" type="submit" name="update">Modifier</button>
 											</div>
 										</div>	
 									</div>	

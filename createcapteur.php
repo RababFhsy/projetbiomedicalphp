@@ -37,6 +37,8 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,35 +89,35 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">créer un boitier</a></li>
                             <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
                          
                         </ul>
                     </li>
  
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">créer un capteur</a></li>
                             <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
                          
                         </ul>
                     </li>
                   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Médecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">créer un compte Médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des Médecins</a></li>
                          
                         </ul>
                     </li>
   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Secrétaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Creer un compte secretaire</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des secretaires</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">créer un compte Secrétaire</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des Secrétaires</a></li>
                          
                         </ul>
                     </li>
@@ -171,11 +173,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i>  Profile</a>
 
                            
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -187,7 +189,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -203,17 +205,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 		
-		
-		<div class="col-sm-8 col-lg-6 alert alert-info" style="margin-left: 210px">
+        <div class="capteur-form">
+		<div class="col-sm-8 col-lg-6 alert alert-light" style="margin-left: 210px;border: 4px solid white;border-radius: 30px">
 		<div style="margin-left: 60px" >
-		 <h1 class="text-dark">Ajouter Capteur</h1>
+		 <h3 class="text-dark">Formulaire Capteur</h3>
 	     </div>
-			<form method="POST" action="addcapteur.php">
+        
+			<form method="POST" action="addcapteur.php" > 
 			
-				<div class="form-group"> 
+				<div class="form-group" > 
 					<label>type</label>
 					<input class="form-control" type="text" name="type"/>
 				</div>
@@ -221,8 +224,9 @@
 					<label>photo</label> 
 					<input class="form-control" type="file" name="photo"/>
 				</div>
+                
 				<div class="form-group">
-					<label>ref</label> 
+					<label>réference</label> 
 					<input class="form-control" type="text" name="ref"/>
 				</div>
 				<div class="form-group">
@@ -233,14 +237,28 @@
 					<label>valeurmin</label> 
 					<input class="form-control" type="text" name="valeurmin"/>
 				</div>
+
+        <br>
 				<div class="form-group">
-					<button class="btn btn-warning form-control" type="submit" name="save">Save</button>
+					<button class="btn btn-primary form-control" style="border-radius: 2px" type="submit" name="save">Sauvgarder</button>
 				</div>
 			</form>
+       
 		</div>
+    </div>
         </div>
 	</div>
 	</div>
+    <style>
+   
+     @media(max-width:576px){
+        .capteur-form{
+           
+            padding-right:230px;
+        }
+        
+     }
+</style>
 	<script src="js/jquery-3.2.1.min.js"></script>	
         <script src="js/bootstrap.js"></script>	
 

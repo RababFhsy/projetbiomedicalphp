@@ -89,7 +89,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Créer un boitier</a></li>
                             <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
                          
                         </ul>
@@ -98,7 +98,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Créer un capteur</a></li>
                             <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
                          
                         </ul>
@@ -107,17 +107,17 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Créer un compte Médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des Médecins</a></li>
                          
                         </ul>
                     </li>
   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Secrétaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Creer un compte secretaire</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des secretaires</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Créer un compte Secrétaire</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des Secrétaires</a></li>
                          
                         </ul>
                     </li>
@@ -189,7 +189,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -205,13 +205,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+        <div class="secretaire-form">
         <div class="content mt-3">
 		
-		<div class="col-sm-8 col-lg-6 alert alert-info" style="margin-left: 210px">
+		<div class="col-sm-8 col-lg-6 alert alert-light" style="margin-left: 210px ;border:4px solid white;border-radius: 30px">
 		<div style="margin-left: 60px" >
-		 <h1 class="text-dark">Formulaire Secretaire </h1>
+		 <h3 class="text-dark">Formulaire Secrétaire </h3>
 	     </div>
 			<form method="POST" action="add_s.php" >
 		
@@ -226,13 +226,15 @@
 				<div class="form-group">
 					<label>Mot de passe </label> 
 					<input class="form-control" type="password" name="password"/>
-				</div>				
+				</div>	
+                <br>			
 				<div class="form-group">
-					<button class="btn btn-warning form-control" type="submit" name="save">Valider</button>
+					<button class="btn btn-primary form-control"style="border: 4px solid primary;border-radius: 2px" type="submit" name="save"><h6>Sauvgarder</h6></button>
 				</div>
 			</form>
 		</div>
 		</div>
+       </div>
 		
 		
 	<script src="js/jquery-3.2.1.min.js"></script>	
@@ -270,7 +272,16 @@
             });
         })(jQuery);
     </script>
-
+<style>
+   
+   @media(max-width:576px){
+      .secretaire-form{
+         
+          padding-right:230px;
+      }
+      
+   }
+</style>
 </body>
 
 </html>

@@ -1461,10 +1461,7 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .dl-horizontal dd {
-    margin-left: 180px;
-  }
-}
+  
 abbr[title],
 abbr[data-original-title] {
   cursor: help;

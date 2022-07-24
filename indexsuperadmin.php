@@ -159,7 +159,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -175,14 +175,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="content mt-5">
 
          
 
 
-            <div class="col-sm-12 col-lg-3" style="margin-left: 240px">
+            <div class="col-sm-12 col-lg-3" style="margin-left: 10px">
                 <div class="card text-white bg-flat-color-3">
                     <div class="card-body pb-0">
                         <div class="dropdown float-right">
@@ -229,7 +229,7 @@ require_once 'conn.php';
   
 
     <!-- Right Panel -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>

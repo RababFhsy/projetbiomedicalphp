@@ -84,7 +84,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Patients </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Creer un compte patient</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Créer un compte patient</a></li>
                             <li><i class="fa fa-table"></i><a href="indexPatient.php">Liste des patients</a></li>
                          
                         </ul>
@@ -144,11 +144,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                        <a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+                        <a class="nav-link" href="profile.php"><i class="fa fa-user"></i>  Profile</a>
 
                          
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -188,7 +188,7 @@
             </div>
 
 
-            <div class="col-sm-6 col-lg-3 "  style="margin-left: 240px" >
+            <div class="col-sm-6 col-lg-3 "  style="margin-right: 50px" >
                 <div class="card text-white bg-flat-color-1">
                     <div class="card-body pb-0">
                         <div class="dropdown float-right">
@@ -236,7 +236,7 @@ require_once 'conn.php';
   
 
     <!-- Right Panel -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>

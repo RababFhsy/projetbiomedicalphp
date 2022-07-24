@@ -86,7 +86,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Créer un boitier</a></li>
                             <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
                          
                         </ul>
@@ -95,17 +95,17 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Créer un capteur</a></li>
                             <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
                          
                         </ul>
                     </li>
                   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des médecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Créer un compte médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des médecins</a></li>
                          
                         </ul>
                     </li>
@@ -113,7 +113,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Creer un compte secretaire</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Créer un compte secretaire</a></li>
                             <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des secretaires</a></li>
                          
                         </ul>
@@ -171,11 +171,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                             
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -187,7 +187,7 @@
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -203,7 +203,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="content mt-3">
 
@@ -212,10 +212,10 @@
 		<div>
 
 		<div class="content mt-3">
-		<div class="col-sm-4 col-lg-5 alert alert-info">
+		<div class="col-sm-4 col-lg-5 alert alert-light"style="border: 4px solid white;border-radius: 30px">
 		<div style="margin-left: 58px" >
 		
-		 <h1 class="text-dark">Ajouter Boitier </h1>
+		 <h3 class="text-dark">Formulaire Boitier </h3>
 	     </div>
 			<!-- <form method="POST"  action="indexboitier.php"> -->
 			<form method="POST" action="" onsubmit="event.preventDefault();onFormSubmit();">
@@ -228,7 +228,7 @@
              <option value="Due">Due</option>
              <option value="One">One</option>
 			 </select>
-			 <label>Reference </label> 
+			 <label>Référence</label> 
 					<input class="form-control" type="text" name="ref"  id="ref"/>
 					<label>Nombre de branche</label> 
 					<input class="form-control" type="number" min=0 name="nbrbranche" id="nbrbranche"/>
@@ -260,15 +260,16 @@
 		     </select>
 				</div>
 				<div class="form-group">
-					<label>fréquence</label>
-					<input class="form-control" type="number" name="date" id="date"/>
+					<label>Fréquence</label>
+					<input class="  form-control" type="number" name="date" id="date"/>
 				</div>
+           
 				<div class="form-group">
-					<button class="btn btn-primary form-control" type="submit" name="submit">add capteur</button>
+					<button class="btn btn-primary form-control" type="submit" name="submit"> <i class="fa fa-plus" aria-hidden="true"></i> Capteur</button>
 				</div>
 				
 				<div class="form-group">
-					<button class="btn btn-warning form-control" type="button" id="insertData" name="save"><a href="indexboitier.php">Save</a></button>
+					<button class="btn btn-success form-control" type="button" id="insertData" name="save"><a href="indexboitier.php"><p class="text-light"> <i class="fas fa-save"></i> Save</p></a></button>
 				</div>
 			</form>
 		<?php
@@ -294,13 +295,15 @@
 		</div>
 		
 		<div class="col-md-7">
-			<table class="table table-bordered " id="table-boitier">
-				<thead class="alert-info">
+			<table  class="table table-hover"  id="table-boitier">
+            
+                <thead  class="table-dark">
 					<tr>
 						<th></th>
 						<th>Type Capteur</th>
 						<th>Branche</th> 
 						<th>Fréquence</th> 
+                        <th>Action</th> 
 					</tr>
 				</thead>
 				<tbody>

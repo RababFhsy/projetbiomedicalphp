@@ -93,7 +93,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Patients </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Creer un compte patient</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="ajouterpatient.php">Créer un compte patient</a></li>
                             <li><i class="fa fa-table"></i><a href="indexPatient.php">Liste des patients</a></li>
                          
                         </ul>
@@ -153,11 +153,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i>  Profile</a>
 
                             
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -170,7 +170,7 @@
 
         </header><!-- /header -->
         <!-- Header-->
-		<div class="breadcrumbs  bg-info">
+		<!-- <div class="breadcrumbs  bg-info">
             <div class="col-sm-4  bg-info">
                 <div class="page-header float-left   bg-info ">
                     <div class="page-title  bg-info text-">
@@ -178,13 +178,13 @@
                     </div>
                 </div>
             </div>          
-        </div>
+        </div> -->
 
-		<hr style="border-top:1px dotted #ccc;" />
+		<div class="patient-form">
 		
-		<div class="col-sm-8 col-lg-6 alert alert-info" style="margin-left: 240px">
+		<div class="col-sm-8 col-lg-6 alert alert-light" style="margin-left: 240px">
 		<div style="margin-left: 60px" >
-		 <h1 class="text-dark">Formulaire Patient </h1>
+		 <h3 class="text-dark">Formulaire Patient </h3>
 	     </div>
 			<form method="POST" action="addPatient.php">
 				<div class="form-group">
@@ -204,8 +204,8 @@
 					<input class="form-control" type="date" name="dateDeNaissance"/>
 				</div>
 				<div class="form-group">
-				<label>Nom de Medecin</label>
-				<select class="form-control" name="NomMedecin">
+				<label>Nom de Médecin</label>
+				<select class="form-control" name="NomMédecin">
 																	<option>Autre</option>
 																	<?php
 						require 'conn.php';
@@ -219,16 +219,17 @@
 							<?php } ?>
 						    </select>
 				<div class="form-group">
-				<label>Date debut</label> 
+				<label>Date Début</label> 
 				<input class="form-control" type="date" name="dateDebut"/>
 				</div>			
-							
+				<br>			
 				<div class="form-group">
-					<button class="btn btn-warning form-control" type="submit" name="save">Enregistrer</button>
+					<button class="btn btn-primary form-control" type="submit"  style="border:4px solid primary;border-radius: 4px" name="save"><h5>Sauvgarder</h5></button>
 				</div>
 			</form>
 			</div>
 						</div>
+                        </div>
                  
 
                      					
@@ -279,6 +280,16 @@
             });
         })(jQuery);
     </script>
+    <style>
+   
+   @media(max-width:576px){
+      .patient-form{
+         
+          padding-right:270px;
+      }
+      
+   }
+</style>
 
 </body>
 

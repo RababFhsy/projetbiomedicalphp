@@ -39,7 +39,32 @@
 
 </head>
 
-<body style="background-color:#47bdeb; ">
+<body>
+<style>
+    body{
+ background-image: url("medecin.webp");
+    display: block;
+    background-size: cover;
+ 
+    }
+    
+   
+   @media(max-width:576px){
+      body{
+    background-image: url("medecin.webp");
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+   max-width: 100%;
+   
+   
+    
+      }
+      
+   }
+
+</style>
     <?php
 require('config.php');
 session_start();
@@ -72,13 +97,13 @@ if (isset($_POST['username'])){
 ?>
 
 
-    <div class="sufee-login d-flex align-content-center flex-wrap">
-        <div class="container">
+   
+        
             <div class="login-content">
                 <div class="login-logo">
                    
                 </div>
-                <div class="login-form">
+                <div class="login-form" style=" border-radius: 20px">
                 <form action="" method="post" name="login" >
                         <div class="form-group">
                             <label>Nom d'utilisateur </label>
@@ -90,27 +115,26 @@ if (isset($_POST['username'])){
                         </div>
                                 <div class="checkbox">
                                     <label>
-                                <input type="checkbox"> Remember Me
+                                <input type="checkbox" style="color: #1977cc;"> Souvenez-vous de moi?
                             </label>
                           
 
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-info btn-flat m-b-30 m-t-30">Se connecter </button>
+                                <button type="submit" name="submit" class="btn btn-outline-primary"  style="border: 3px solid #1977cc;border-radius: 35px">Se connecter </button>
                                 <div class="social-login-content">
                                   
                                 </div>
-                                <p class="box-register">Vous êtes nouveau ici? <a href="register.php" class="text-danger">S'inscrire</a></p>
+                                <!-- <p class="box-register">Vous êtes nouveau ici? <a href="register.php" class="text-danger">S'inscrire</a></p> -->
 	<?php if (! empty($message)) { ?>
     <p class="errorMessage"><?php echo $message; ?></p>
 <?php } ?>
                     </form>
-                </div>
-            </div>
+              
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- <script src="vendors/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>

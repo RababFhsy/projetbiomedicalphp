@@ -87,35 +87,35 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i>   Gestion des Boitiers </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Creer un boitier</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="addboitier.php">Créer un boitier</a></li>
                             <li><i class="fa fa-table"></i><a href="indexboitier.php">Liste des boitiers</a></li>
                          
                         </ul>
                     </li>
  
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des capteurs </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Capteurs </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Creer un capteur</a></li>
-                            <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des capteurs</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="createcapteur.php">Créer un Capteur</a></li>
+                            <li><i class="fa fa-table"></i><a href="indexcapteur.php">Liste des Capteurs</a></li>
                          
                         </ul>
                     </li>
                   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des medecins </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Médecins </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Creer un compte medecin</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des medecins</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_users1.php">Créer un compte Médecin</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_users.php">Liste des Médecins</a></li>
                          
                         </ul>
                     </li>
   
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des secretaires </a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i> Gestion des Secrétaires </a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Creer un compte secretaire</a></li>
-                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des secretaires</a></li>
+                            <li><i class="fa fa-id-card-o"></i><a href="add_secretaires1.php">Créer un compte Secrétaire</a></li>
+                            <li><i class="fa fa-table"></i><a href="add_secretaires.php">Liste des Secrétaires</a></li>
                          
                         </ul>
                     </li>
@@ -172,11 +172,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> My Profile</a>
+						<a class="nav-link" href="profile.php"><i class="fa fa-user"></i> Profile</a>
 
                             
 
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i> déconnexion</a>
                         </div>
                     </div>
 
@@ -184,11 +184,12 @@
 
                 </div>
             </div>
+            
 
         </header><!-- /header -->
         <!-- Header-->
 
-        <div class="breadcrumbs">
+        <!-- <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title ">
@@ -204,14 +205,14 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+        <div class="medecin-form">
         <div class="content mt-3">
-		<div class="col-sm-8 col-lg-6 alert alert-info" style="margin-left: 200px">
+		<div class="col-sm-8 col-lg-6 alert alert-light" style="margin-left: 200px;border:4px solid white;border-radius: 30px">
 		<div style="margin-left: 58px" >
-		 <h1 class="text-dark">Formulaire Medecin </h1>
+		 <h3 class="text-dark">Formulaire Médecin </h3>
 	     </div>
-	
+        
 			<form method="POST" action="add_m.php" >
 				<div class="form-group"> 
 					<label>Nom</label>
@@ -228,11 +229,13 @@
                 <div class="form-group">
 					<label>Age </label>
 					<input class="form-control" type="number" name="age" min='0'/>
-				</div>				
+				</div>	
+                <br>			
 				<div class="form-group">
-					<button class="btn btn-warning form-control" type="submit" name="save">Valider</button>
+					<button class="btn btn-primary form-control"style="border: 4px solid parimary;border-radius: 4px;" type="submit" name="save"><h6>Sauvgarder</h6></button>
 				</div>
 			</form>
+         </div>
 		</div></div>
 		
 	<script src="js/jquery-3.2.1.min.js"></script>	
@@ -270,6 +273,16 @@
             });
         })(jQuery);
     </script>
+     <style>
+   
+   @media(max-width:576px){
+      .medecin-form{
+         
+          padding-right:230px;
+      }
+      
+   }
+</style>
 
 </body>
 
